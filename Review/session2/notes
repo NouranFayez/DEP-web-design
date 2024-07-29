@@ -1,0 +1,24 @@
+
+-- position ==> fixed , sticky , relative , absolute , static (default)
+            ==> top , left , right , bottom , z-index
+-- box-sizing
+-- overlay 
+
+
+-- border-raduis ==> 50%
+-- reflect
+-- display : flex
+-- before / after 
+
+-- ul instead of table
+
+-- transform 
+-- media Query
+
+
+
+-- div , semantic tags (section , footer , header , nav , form , p ) , ul , ol , dl , hr , h1:h6  ==> block
+
+--  b  , button , img , small , input , textarea , select , label  ==> inline-block
+
+-- a , span ==> inline

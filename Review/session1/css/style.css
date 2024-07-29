@@ -1,0 +1,202 @@
+
+/* Reset style */
+:root{
+    --bg-dark : black ;
+    --bg-orange : orange;
+    --bg-gray : gray;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    display: flex;
+}
+ul{
+    list-style: none;
+}
+
+/* global style */
+
+.bg-dark{
+    background-color: var(--bg-dark);
+}
+.text-white{
+    color: white;
+}
+.d-flex{
+    display: flex;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.align-items-center{
+    align-items: center;
+}
+.overlay{
+    background-color: #000000a8;
+    height: 100%;
+}
+
+.text-orange{
+    color: var(--bg-orange);
+}
+
+.btn-transparent{
+    background: transparent;
+    color: white;
+    border: 2px solid;
+    padding: 2% 3%;
+    margin-top: 4%;
+}
+.bg-gray{
+    background-color: #eee;
+}
+
+.bg-white{
+    background-color: white;
+}
+.btn-orange{
+    background-color: var(--bg-orange);
+    color: white;
+    border: 0;
+}
+.padding-top-bottom{
+    padding: 7% 0;
+}
+.text-gray{
+    color: #a2a0a0;
+}
+
+/* custom style */
+/* .nav-flex{
+    display: flex;
+    justify-content: space-between;
+} */
+
+nav a{
+    color: white;
+}
+.nav-ul-width{
+    width: 30%;
+}
+nav h1{
+    font-size: 40px;
+}
+.banner-bg-img{
+    background-image:url(../images/istockphoto-1460762245-170667a.webp);
+    height: 400px;
+    background-size: 100% 100%;
+}
+.banner-bg-img .d-flex{
+    padding: 4% 0%;
+}
+.banner-details{
+    width: 35%;
+}
+.banner-hr{
+    width: 17%;
+    margin: 3% 0%;
+    border: 1px solid white;
+}
+
+.banner-bg-img form{
+    width: 25%;
+}
+.banner-bg-img form h3{
+    padding: 2% 4%;
+    text-align: center;
+}
+
+.form-container{
+    padding: 7% 9%;
+}
+
+.form-container input{
+    width: 100%;
+    margin-bottom: 4%;
+    /* border-top: 0; */
+    /* border-left: 0; */
+    /* border-right: 0; */
+    border: 0;
+    border-bottom: 1px solid gray;
+    padding: 3% 1%;
+}
+
+.banner-form-btn{
+    width: 100%;
+    padding: 3%;
+    
+}
+.facebook-icon{
+    color: blue;
+    font-size: 30px;
+    background: lightcyan;
+    padding: 2%;
+    border: 2px solid;
+    margin: 2%;
+}
+.tab-container{
+    width: 10%;
+}
+
+.tab{
+    text-transform: uppercase;
+    background: black;
+    color: white;
+    padding: 30% 3%;
+    /* height: 100px; */
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+    /* transition-duration  , transition-property (all) , transition-timing-function (ease) */
+    transition: 1s  ;
+}
+.tab:hover{
+    background-color: orange;
+    /* height: 300px; */
+}
+.tabs-details{
+    width: 35%;
+}
+
+.tabs-img{
+    width: 30%;
+}
+.tabs-btn{
+    padding: 2% 4%;
+    font-size: 18px;
+    margin-top: 5%;
+    border-radius: 3px;
+}
+
+
+.tab-container .tab:first-child{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.tab-container .tab:last-child{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+/* Pesudo Class ==> state of element  ==> :hover , :checked , :first-child , :last-child   */
+/* Pesudo Element */
+
+input:disabled{
+    background-color: aqua;
+}
+input:focus{
+    outline: 0;
+
+    border-bottom:1px solid orange;
+}
+

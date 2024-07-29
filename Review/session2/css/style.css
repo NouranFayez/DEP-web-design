@@ -1,0 +1,112 @@
+/* Reset style */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/* global style */
+
+.bg-light{
+    background-color: #eee;
+    height: 3000px;
+}
+.bg-blue{
+    background-color: lightblue;
+    height: 1000px;
+}
+.bg-gold{
+    background-color: goldenrod;
+    height: 1000px;
+}
+.bg-pink{
+    background-color: lightpink;
+    height: 1000px;
+}
+.bg-dark{
+    background-color: black;
+}
+.container{
+    width: 80%;
+    margin: 20px;
+    margin: 10px 40px;
+    margin: 10px 40px 50px;
+    margin: 10px 20px 30px 40px;
+    margin:  auto;
+    /* width: 50%;
+    /* margin: auto;
+    background-color: azure; */
+}
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav {
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+/* custom style */
+#top-arrow{
+    background: blue;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    bottom: 6%;
+    right: 2%;
+    position: fixed;
+    /* display: inline-block;
+    text-align: center;
+    line-height: 2.5; */
+}
+
+#services-section .card{
+    width: 30%;
+    background: azure;
+    margin-top: 3%;
+    position: relative;
+    border: 30px solid;
+    box-sizing: border-box;
+    padding: 4%;
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px;
+    border-color: azure transparent transparent transparent;
+    position: absolute;
+    top: 100%;
+
+}
+
+.bg-light .card{
+
+}
+
+.bg-img{
+    background-image: url(../../session1/images/istockphoto-1460762245-170667a.webp);
+    /* height: 400px; */
+    background-size: 100% 155%;
+}
+
+.overlay{
+    height: 100%;
+    background-color: #000000a1;
+    padding: 10% 0;
+    color: white;
+}
