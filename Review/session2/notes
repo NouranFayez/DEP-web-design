@@ -2,9 +2,9 @@
 -- position ==> fixed , sticky , relative , absolute , static (default)
             ==> top , left , right , bottom , z-index
 -- box-sizing
+
+
 -- overlay 
-
-
 -- border-raduis ==> 50%
 -- reflect
 -- display : flex

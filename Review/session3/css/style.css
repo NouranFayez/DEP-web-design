@@ -1,0 +1,128 @@
+/* Reset Style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* global style */
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.d-flex{
+    display: flex;
+    /* flex-start (default ) , flex-end , center , space-around , space-between , space-evenly */
+    justify-content: space-around;
+    /* center , flex-start , flex-end , stretch */
+    align-items: center;
+    background-color: antiquewhite;
+    /* no-wrap(default) */
+    flex-wrap: wrap;
+    height: 100vh;
+    /* center , flex-start ,flex-end , space-between , space-around */
+    align-content: space-evenly;
+    /* flex-direction : row (default) , row-reverse , column , column-reverse  */
+}
+.align-self-start{
+    align-self: flex-start;
+}
+
+/* Custom style */
+
+.bg-light{
+    background-color: #eee !important;
+    color: black;
+}
+
+.card{
+    width: 30%;
+    padding: 1%;
+    background-color: rgb(8, 194, 194);
+}
+.card img{width: 100%;}
+.card .card-img{width: 100%;}
+.card a{
+    text-decoration: none;
+    background: black;
+    color: white;
+    padding: 2%;
+    margin: 3% 0%;
+    display: inline-block;
+}
+.card a:hover{
+    background-color: maroon;
+}
+.card:hover p{
+    color: red;
+}
+.card p:hover +h2{
+    color: blue;
+}
+
+.overflow-card{
+
+}
+#div_id{
+    background-color: lightblue;
+    width: 30%;
+    height: 92px;
+    /* hidden , auto , scroll , visible */
+    overflow: auto;
+
+}
+#div_id:hover{
+    overflow: visible;
+    background-color: black;
+    height: auto;
+    color: white;
+}
+
+div{
+
+}
+.text-blue{
+    color: blue !important;
+}
+
+
+.transform-card{
+    background-color:black ;
+    color: white;
+    width: 30%;
+    padding:2% ;
+    /* margin:5% auto; */
+    display: inline-block;
+    transition: 1s ;
+}
+.transform-card:hover{
+    /* margin-left: 16%;  */
+    transform: translateX(156px);
+    transform: translateY(-75px);
+    transform: rotate(127deg);
+    transform: skewX(-31deg);
+    /* transform: skewY(-21deg); */
+    transform: scaleX(0.5);
+    transform: scaleY(0.5);
+    transform: scale(1.5);
+    transform: rotate(20deg) scale(1.3);
+}
+
+.custom-padding{
+    padding: 3% 0;
+}
+
+
+.custom-d-flex{
+    display: flex;
+    justify-content: space-between ;
+}
+.custom-card{
+    width: 30%;
+    background-color: lightblue;
+}
+.custom-card h2{
+    font-size: 100px;
+}
