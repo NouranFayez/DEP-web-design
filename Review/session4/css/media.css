@@ -1,0 +1,59 @@
+/* rule ==> @media  */
+/* type ==> screen , speech , print */
+/* condition ==> (max-width , min-width)  */
+
+
+
+/* 360 px */
+/* 0 ==> 575.98px */
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .card{
+        background-color: black;
+        color: white;
+    }
+ }
+
+/* 360px */
+
+/* 0 ==> 400px */
+@media (max-width:400px){
+    .card{
+      width: 100%;  
+      background-color: goldenrod;
+    }
+    .d-flex{
+        flex-direction: column;
+    }
+}
+
+
+
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+/* @media (max-width: 767.98px) { ... } */
+
+/* 800 ==> up to */
+@media (min-width:800px){
+    .card{
+        background-color: teal;
+        color: white;
+    }
+}
+
+/* 600 => 750 */
+@media (min-width:600px) and (max-width:750px){
+    .card{
+        background-color: maroon;
+        color: white;
+    }
+}
+
+@media print{
+    .d-none-print{
+        display: none;
+    }
+    .card{
+        width: 45%;
+    }
+}

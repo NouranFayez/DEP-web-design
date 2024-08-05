@@ -2,17 +2,16 @@
 -- position ==> fixed , sticky , relative , absolute , static (default)
             ==> top , left , right , bottom , z-index
 -- box-sizing
-
-
--- overlay 
--- border-raduis ==> 50%
--- reflect
+-- overlay
 -- display : flex
--- before / after 
-
--- ul instead of table
-
 -- transform 
+-- border-raduis ==> 50%
+
+
+ 
+-- reflect
+-- before / after 
+-- ul instead of table
 -- media Query
 
 
