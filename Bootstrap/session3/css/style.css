@@ -1,0 +1,13 @@
+.carousel-indicators{
+    left: auto;
+    margin-right: 4%;
+    bottom: 20rem;
+}
+
+.carousel-indicators [data-bs-target]{
+    width: 15px;
+    height: 15px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: maroon;
+}

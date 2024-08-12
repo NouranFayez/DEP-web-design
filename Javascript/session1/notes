@@ -1,0 +1,29 @@
+-- data type ==> string , number , boolean (true , false) , undefined , null , array , object
+
+--- operators ==> Mathmatical Opertaoprs
+                  Assignment Operators 
+                  Comparsion Operators
+                  logical Operators
+                  ternary Operators
+                  unary Operators
+
+
+-- Mathematical Operators ==> + - / * % ++ --  
+-- Assignment Operators ==> += , -= , /= , *= , %=
+-- comparison Operators ==> ( > , >= , < , <= , == , === , != , !==)   : return value ==>  boolean type
+-- logical Operator ==> ! && ||
+-- ternary operator ==> (condition) ? true code : false code
+-- unary operator ==> typeof
+
+-- && ==> true , false , true = false
+-- && ==> true , true , true = true
+
+-- || ==> true , false , false = true
+-- || ==> false , false , false = false
+
+ ++ ==> increment 
+ -- ==> decrement
+
+
+ -- falsy values ==> 0 , -0 , "" , null , undefined , false
+ -- truthy values ==> 'string' , ' '  , true  , 30 
