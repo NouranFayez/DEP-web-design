@@ -1,0 +1,18 @@
+-- NaN ==> Not a Number
+
+-- ParseInt() , parseFloat() , + 
+
+-- if/else statment
+
+-- loop ==> for , while 
+
+-- switch case statment 
+
+-- function ==> block of code 
+
+-- function ==> name (required)
+                parameters (optional)
+                return value (optional)
+                callFunc() required
+
+-- types of function ==> function statment , function expression , arrow function                
