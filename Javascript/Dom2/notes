@@ -1,0 +1,3 @@
+-- events ==> scroll , input , mouseleave , mouseenter , change
+-- call js by addEventlistener(type , function)
+-- call js inline Element ==> onclick , onmouseenter ......
