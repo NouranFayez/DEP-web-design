@@ -1,0 +1,16 @@
+<div class="container">
+    <h1>{{appTitle}}</h1>
+
+    <h2>{{getFirstName()}}</h2>
+
+    <h2>{{getMaxNum(10 , 5, 100)}}</h2>
+
+    <button class="btn btn-success" [disabled]="isDisabled" [class]="borderWidth"
+    (click)="handleClick()">click</button>
+
+    <input type="text" class="form-control" #userInput (input)="handleInput($event , userInput)" name="" id="">
+    <h2>{{userInput.value}}</h2>
+    <h2>{{inputValue}}</h2>
+
+
+</div>
