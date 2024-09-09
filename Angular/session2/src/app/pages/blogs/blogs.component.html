@@ -1,0 +1,55 @@
+<div class="container">
+    <h1>{{appName}}</h1>
+
+    <button class="btn btn-primary" (click)="handleClick()">Change App Name</button>
+
+    <!-- <input type="text" class="form-control" #userName (input)="handleInput(userName)">
+    <h2>{{inputvalue}}</h2> -->
+
+
+    <!-- <input type="text" name="" [(ngModel)]="inputModelValue"    placeholder="enter your name" id="">
+    <h2>{{inputModelValue}}</h2> -->
+    <form>
+        <input type="text" class="form-control" [(ngModel)]="model.userName" name="userName"
+            placeholder="enter userName" class="form-control">
+        <input type="text" class="form-control" [(ngModel)]="model.userEmail" name="userEmail"
+            placeholder="enter userEmail" class="form-control">
+        <select name="track" [(ngModel)]="model.track" id="">
+            <option>frontend</option>
+            <option>backend</option>
+        </select>
+        <button class="btn btn-primary" (click)="handleFormClick()">Submit</button>
+    </form>
+
+    <!-- alert , alert-danger -->
+    <!-- <div [ngClass]="alertClass">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur explicabo quos sapiente odio ullam nam
+            reprehenderit temporibus eveniet molestiae perferendis nisi, veniam officiis commodi exercitationem ratione,
+            doloremque ipsa sit impedit!</p>
+            <button class="btn btn-primary" (click)="alertClass = 'alert alert-primary'">change alert bgColor</button>
+    </div> -->
+
+    <!-- <div [ngClass]="{'alert' : alertBoolean , 'alert-danger' : alertBooleanBgColor}">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur explicabo quos sapiente odio ullam nam
+            reprehenderit temporibus eveniet molestiae perferendis nisi, veniam officiis commodi exercitationem ratione,
+            doloremque ipsa sit impedit!</p>
+            <button class="btn btn-primary" (click)="alertClass = 'alert alert-primary'">change alert bgColor</button>
+    </div> -->
+
+    <!-- <div [ngClass]="[alertClass]">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur explicabo quos sapiente odio ullam nam
+            reprehenderit temporibus eveniet molestiae perferendis nisi, veniam officiis commodi exercitationem ratione,
+            doloremque ipsa sit impedit!</p>
+            <button class="btn btn-primary" (click)="alertClass = 'alert alert-primary'">change alert bgColor</button>
+    </div> -->
+
+
+    <div [ngStyle]="{'background' : backgroundColor}">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur explicabo quos sapiente odio ullam nam
+            reprehenderit temporibus eveniet molestiae perferendis nisi, veniam officiis commodi exercitationem ratione,
+            doloremque ipsa sit impedit!</p>
+            <button class="btn btn-primary" (click)="alertClass = 'alert alert-primary'">change alert bgColor</button>
+    </div>
+    <button (click)="backgroundColor = 'lightblue'  ">change Bg Color</button>
+
+</div>

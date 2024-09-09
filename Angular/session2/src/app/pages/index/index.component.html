@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row gy-3">
+        <div class="col-12">
+            <input type="text" placeholder="search in post " class="form-control">
+        </div>
+        <div class="col-12 col-md-6 col-xl-4" *ngFor="let item of posts ; let i = index ; let f = first ; let l = last;
+        let e = even ; let odd = odd ; let c = count">
+            <div class="card" [ngClass]="{'border-primary' : f , 'border-4' : f  , 'border-danger' : l , 'bg-info' : e}" >
+                <h4>{{i}} - {{item.title}}</h4>
+                <p>{{item.body}}</p>
+                <p>first = {{f}}</p>
+                <h5>last = {{l}}</h5>
+                <h5>count = {{c}}</h5>
+                <button class="btn btn-success" *ngIf="odd">
+                    button in odd Item
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- <h1 *ngFor="let item of arr">{{item}}</h1> -->
+    <!-- <h1>{{arr[1]}}</h1>
+    <h1>{{arr[2]}}</h1>
+    <h1>{{arr[3]}}</h1> -->
+</div>

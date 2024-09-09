@@ -1,0 +1,19 @@
+-- install node js
+-- install angular command line interface ==> npm i -g @angular/cli
+-- create new app ==> ng new appName --standalone=false
+-- install bootstrap ==> npm i bootstrap
+-- run my app ==> ng serve -open (ng s -o)
+
+
+--- data binding ==> one way binding ==> interpolation {{}}
+                                         property binding []
+                                         event binding ()
+                 ==> two way binding ==> ngModel   []+() = [(ngModel)]  
+                                  
+
+-- directive ==> attribute directive ==> ngClass
+                                     ==> ngStyle 
+                                     ==> ngModel   []+() = [(ngModel)]      
+
+            ==> structure directive ==> *ngIf 
+                                    ==> *ngFor                                                        
