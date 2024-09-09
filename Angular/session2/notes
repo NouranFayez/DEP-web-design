@@ -16,4 +16,15 @@
                                      ==> ngModel   []+() = [(ngModel)]      
 
             ==> structure directive ==> *ngIf 
-                                    ==> *ngFor                                                        
+                                    ==> *ngFor    
+
+
+-- posts ==> add post ==> title , body
+         ==> edit post title ==> title
+         ==> delete post  
+         ==> search in posts   
+
+
+ --- install typescript ==> npm install -g typescript
+         
+                                                                                  
