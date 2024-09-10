@@ -1,0 +1,8 @@
+<div class="row">
+    <h3 class="col-12">
+        Products
+    </h3>
+    <div class="col-4" *ngFor="let item of products">
+        <app-card [data]="item" [anotherData]="'products'"></app-card>
+    </div>
+</div>

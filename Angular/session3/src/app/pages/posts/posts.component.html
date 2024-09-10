@@ -1,0 +1,8 @@
+<div class="row">
+    <h3 class="col-12">
+        Posts
+    </h3>
+    <div class="col-4" *ngFor="let item of posts">
+        <app-card [data]="item" [anotherData]="'angular'"></app-card>
+    </div>
+</div>

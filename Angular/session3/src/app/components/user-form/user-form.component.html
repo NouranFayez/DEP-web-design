@@ -1,0 +1,17 @@
+<form class="row my-3 gy-3">
+    <div class="col-6">
+        <input type="text" [(ngModel)]="model.name" id="userName" #userName
+           name="name" class="form-control" placeholder="username">
+    </div>
+    <!-- (input)="handleInput(userName)" -->
+    <!-- <h2>{{inputValue}}</h2>
+    <h2>{{model.name}}</h2> -->
+    <div class="col-6">
+        <input type="text" class="form-control" [(ngModel)]="model.email" name="email" placeholder="useremail">
+    </div>
+    <div class="col-12">
+        <button class="btn btn-primary" (click)="handleSubmit()">Add User</button>
+    </div>
+
+    <!-- <button (click)="disabledInput = false">Enable the input</button> -->
+</form>

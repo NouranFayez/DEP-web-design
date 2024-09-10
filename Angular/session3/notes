@@ -1,0 +1,4 @@
+-- directive ==> ngSwitch
+
+-- communication between components ==> from parent to child (@Input)
+                                    ==> from child to parent (@Output)
