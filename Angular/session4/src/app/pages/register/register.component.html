@@ -1,0 +1,57 @@
+<div class="container">
+    <form class="row gy-3" #registerForm="ngForm" (ngSubmit)="handleSubmit(registerForm)" >
+        <div class="alert alert-primary">
+            <p>valid {{registerForm.valid}}</p>
+            <p>invalid {{registerForm.invalid}}</p>
+            <p>value {{registerForm.value | json}}</p>
+            <p>submit {{registerForm.submitted}}</p>
+            <p>touched {{registerForm.touched}}</p>
+        </div>
+        <div class="col-12 col-md-6">
+            <input type="text" [(ngModel)]="model.userName" class="form-control"
+             placeholder="Name" name="userName" id="" required #userName="ngModel">
+
+        </div> 
+        <div class="col-12 col-md-6">
+            <input type="email" class="form-control"  [(ngModel)]="model.userEmail"
+             placeholder="Email" name="userEmail" id="" required email #userEmail="ngModel">
+             <div class="alert alert-danger" *ngIf="registerForm.submitted && userEmail.invalid">
+                <div *ngIf="userEmail.errors?.['required']">
+                    email is required
+                </div>
+                <div *ngIf="userEmail.errors?.['email']">
+                    invalid Email
+                </div>
+             </div>
+             <div class="alert alert-primary">
+                <p>touched {{userEmail.touched}}</p>
+                <p>errors {{userEmail.errors | json}}</p>
+                <p>valid {{userEmail.valid}}</p>
+                <p>invalid {{userEmail.invalid}}</p>
+                <p>dirty {{userEmail.dirty}}</p>
+             </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <input type="password" class="form-control" [(ngModel)]="model.userPassword" 
+            placeholder="Password" name="userPassword" required minlength="4" pattern="^[A-Za-z]+$" #userPassword="ngModel" id="">
+            <!-- {{userPassword.errors | json}} -->
+            <div class="alert alert-danger" *ngIf="userPassword.invalid && (userPassword.dirty  || registerForm.submitted)">
+                <div *ngIf="userPassword.errors?.['required']">
+                    password is required
+                </div>
+                <div *ngIf="userPassword.errors?.['minlength']">
+                    min length = 4
+                </div>
+                <div *ngIf="userPassword.errors?.['pattern']">
+                    enter letters only
+                </div>
+            </div>
+        </div>
+        <div class="col-12 ">
+            <button class="btn btn-primary">Register</button>
+        </div>
+    </form>
+</div>
+
+<!-- Template driven form ==> ngModel -->
+<!-- Reactive form -->

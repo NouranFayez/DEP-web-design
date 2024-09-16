@@ -1,0 +1,26 @@
+<div class="container">
+
+    <button class="btn btn-primary" (click)="handleName()">Change user Name</button>
+    <!-- Pipes -->
+
+    <h1>{{currentDate | date }}</h1>
+    <h1>{{currentDate | date : 'dd-MM-yyyy'}}</h1>
+    <h1>{{currentDate | date : 'fullDate'}}</h1>
+
+    <h3>{{"angular" | uppercase}}</h3>
+    <h3>{{"HTML" | lowercase}}</h3>
+
+    <div>
+        {{posts | json}}
+    </div>
+
+    <h4 *ngFor="let item of posts | slice: 0 :3">{{item.title}}</h4>
+    <hr>
+    <h4 *ngFor="let item of posts | slice: -2">{{item.title}}</h4>
+    <hr>
+    <h4>{{'Angular' | slice : 0 : 3}}</h4>
+    <!-- currency , number , async  -->
+     <!-- 1100 ==> 1.1K -->
+
+
+</div>
