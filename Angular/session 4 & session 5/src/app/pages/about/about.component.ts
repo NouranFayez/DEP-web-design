@@ -23,7 +23,7 @@ export class AboutComponent {
   ]
 
   handleName(){
-    this.global.firstName = 'Zain'
+    // this.global.firstName = 'Zain'
   }
 
 }

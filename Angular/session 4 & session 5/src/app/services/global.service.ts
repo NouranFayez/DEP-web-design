@@ -6,8 +6,11 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class GlobalService {
-  firstName = "Nouran"
-  constructor(private http : HttpClient) { }
+  fullName = (localStorage.getItem('userName')) ? localStorage.getItem('userName') : null;
+  isLogin = (localStorage.getItem('userToken')) ? true : false ;
+  constructor(private http : HttpClient) {
+    console.log(this.fullName)
+   }
 
   // https://jsonplaceholder.typicode.com/users
 

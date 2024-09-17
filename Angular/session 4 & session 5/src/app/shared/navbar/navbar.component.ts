@@ -11,7 +11,11 @@ export class NavbarComponent {
   flag : boolean = true
   constructor(public global : GlobalService){
 
-    console.log(this.global.firstName)
+  
   }
-
+  handleLogOut(){
+    localStorage.removeItem('userToken')
+    localStorage.removeItem('userName')
+    this.global.isLogin = false
+  }
 }
