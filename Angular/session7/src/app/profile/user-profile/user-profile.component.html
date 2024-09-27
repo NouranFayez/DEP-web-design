@@ -1,0 +1,17 @@
+<!-- Template Driven form -->
+<!-- <form>
+    <input type="text" placeholder="firstName" [(ngModel)]="model.firstName">
+</form> -->
+
+<!-- Reactive Form  -->
+<form [formGroup]="testForm">
+    <input type="text" formControlName="customer_first_name" name="" id="">
+
+    <ng-select [items]="countries" bindLabel="name" bindValue="id" formControlName="country_id"
+        placeholder="Choose Country" (clear)="handleClear()" (change)="handleGovernate($event)">
+    </ng-select>
+
+    <ng-select [items]="governorates" bindLabel="name" bindValue="id" formControlName="country_id"
+        placeholder="Choose Governorate" [readonly]="stateSelect" (change)="handleCities($event)">
+    </ng-select>
+</form>
