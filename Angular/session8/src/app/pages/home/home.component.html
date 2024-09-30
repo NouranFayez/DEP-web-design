@@ -1,0 +1,11 @@
+<div class="row">
+    <h3 class="col-12">Categories</h3>
+    <div class="col-12 col-md-4" *ngFor="let category of categories">
+        <div class="card">
+            <img src="{{category.image}}" class="card-img-body" alt="">
+            <div class="card-body">
+                <h3 routerLink="/category/{{category.id}}">{{category.category_data.category_name}}</h3>
+            </div>
+        </div>
+    </div>
+</div>
