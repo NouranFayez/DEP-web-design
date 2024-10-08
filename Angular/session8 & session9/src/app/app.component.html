@@ -1,0 +1,15 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <button class="btn btn-primary" (click)="handleLang('en')">Change to English</button>
+  <button class="btn btn-primary" (click)="handleLang('ar')">Change to Arabic</button>
+
+  <h3>
+    {{"Home" | translate}}
+  </h3>
+  <h3>
+    {{"contact" | translate}}
+  </h3>
+
+  <router-outlet />
+
+</div>
